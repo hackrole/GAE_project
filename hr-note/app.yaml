@@ -11,7 +11,7 @@ handlers:
 - url: /index
   script: hello.app
 
-- url: /blog*
+- url: /blog/*
   script: blog.app
 
 - url: /wiki/*

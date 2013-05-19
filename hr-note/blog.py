@@ -56,8 +56,8 @@ class CreatePage(BaseHandler):
         
 
 app = webapp2.WSGIApplication([
-        ('/blog', IndexPage),
+        ('/blog/', IndexPage),
         ('/blog/detail/([\d]+)', DetailPage),
-        ('/blog/create', CreatePage),
+        ('/blog/create/', CreatePage),
         ],
                               debug=True)
