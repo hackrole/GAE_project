@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="/static/css/style.css" />
+	{% block title %}
+	<title>hackrole' home</title>
+	{% endblock title %}
+  </head>
+  <body>
+	<div id="header">
+	  {% block header %}
+	  <ul>
+		<li>blog</li>
+		<li>wiki</li>
+		<li>note</li>
+	  </ul>
+	  {% endblock header %}
+	</div>
+	<div id="content">
+	  {% block content %}
+	  {% endblock content %}
+	</div>
+  </body>
+</html>

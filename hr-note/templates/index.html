@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>this is hackrole's blogs home, welcome.</p>
+{% if blog is defined %}
+{% for blog in blogs %}
+<div>
+  <p>
+	<a href="/blog/detail/{{ blog.key().id() }}">
+	  title: {{ blog.title }}
+	</a>
+  </p>
+  <p>author: {{ blog.author }}</p>
+  <p>create_time: {{ blog.create_time }}</p>
+</div>
+{% endfor %}
+{% else %}
+there still no blog now!
+{% endif %}
+{% endblock content %}

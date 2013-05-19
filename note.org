@@ -1,0 +1,7 @@
+
+
+* DONE questions
+** upload error
+1) export HTTP_PROXY=http://127.0.0.1:8087
+2) export HTTPS_PROXY=http://127.0.0.1:8087
+3) \rm -rf GAE_DIR/lib/cacerts/cacerts.txt
